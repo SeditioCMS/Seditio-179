@@ -2851,9 +2851,9 @@ function sed_infoget($file, $limiter = 'SED', $maxsize = 32768)
 	return ($result);
 }
 
-/** 
+/**
  * Creating a radio input item.
- * 
+ *
  * @param string $name Name attribute for the radio input.
  * @param string $value Value attribute for the radio input.
  * @param string $label Label for the radio item.
@@ -2868,7 +2868,7 @@ function sed_radio_item($name, $value, $label = '', $id = '', $checked = false, 
 	$id = (empty($id)) ? $name : $name . "_" . $id;
 	$checked = ($checked === true) ? " checked" : "";
 	$onclick = ($onclick) ? " onclick=\"" . $onclick . "\"" : "";
-	
+
 	$htmlAttributes = "";
 	foreach ($additionalAttributes as $attribute => $attrValue) {
 		$htmlAttributes .= " " . $attribute . "=\"" . $attrValue . "\"";
@@ -2879,7 +2879,7 @@ function sed_radio_item($name, $value, $label = '', $id = '', $checked = false, 
 	return $result;
 }
 
-/** 
+/**
  * Creating a radio input field.
  *
  * @param string $name Name attribute for the radio input.
@@ -2896,7 +2896,6 @@ function sed_radiobox($name, $options, $checked_val = '', $additionalAttributes 
 
 	$jj = 0;
 	$result = '';
-
 	foreach ($options as $key => $value) {
 		$jj++;
 		$checked_state = ($checked_val === (string)$key) ? true : false;
