@@ -6,8 +6,8 @@ Copyright Neocrome & Seditio Team
 https://seditio.org
 [BEGIN_SED]
 File=page.inc.php
-Version=179
-Updated=2013-nov-24
+Version=180
+Updated=2025-jan-25
 Type=Core
 Author=Seditio Team
 Description=Pages

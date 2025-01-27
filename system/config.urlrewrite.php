@@ -6,8 +6,8 @@ Copyright Neocrome & Seditio Team
 https://seditio.org
 [BEGIN_SED]
 File=system/config.urlrewrite.php
-Version=179
-Updated=2013-sep-26
+Version=180
+Updated=2025-jan-25
 Type=Core
 Author=Seditio Team
 Description=Url rewriting config
@@ -20,6 +20,12 @@ $sed_urlrewrite = array(
      array(
           'cond' => '#^/go/#',
           'rule' => 'system/core/go/go.php'
+     ),
+	 
+	 /*  Ajax rewriting */
+	 array(
+          'cond' => '#^/ajax(/?)$#',
+          'rule' => 'system/core/ajax/ajax.php'
      ),
 
      /*  Resizer rewriting */

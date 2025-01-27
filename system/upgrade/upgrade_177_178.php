@@ -6,8 +6,8 @@ Copyright Neocrome & Seditio Team
 https://seditio.org
 [BEGIN_SED]
 File=upgrade_177_178.php
-Version=179
-Updated=2013-jun-25
+Version=180
+Updated=2015-jan-25
 Type=Core.upgrade
 Author=Seditio Team
 Description=Database upgrade
